@@ -34,52 +34,57 @@ print "
 ";
 */
 
-if(0)
+if(1)
 print "
-
-						<div class=\"networks\">
-
-
-							<a href=\"#\" class=\"networks__active top-header__poligon\" id=\"dropdownNetwork\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-								<span class=\"networks__btn d-flex align-items-center\">
-									<img src=\"/images/poligon.svg\" alt=\"\" />
-									<span>Polygon</span>
-								</span>
-								<svg width=\"11\" height=\"7\" viewBox=\"0 0 11 7\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
-									<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0.982895 0.640364C1.30774 0.315516 1.83443 0.315517 2.15928 0.640366L5.69226 4.17336L9.22526 0.640365C9.55011 0.315516 10.0768 0.315516 10.4016 0.640365C10.7265 0.965213 10.7265 1.4919 10.4016 1.81675L6.28045 5.93793C6.12445 6.09393 5.91287 6.18157 5.69226 6.18157C5.47164 6.18157 5.26007 6.09393 5.10407 5.93793L0.982893 1.81674C0.658045 1.4919 0.658046 0.965212 0.982895 0.640364Z\" fill=\"black\"/>
-									</svg>						
-							</a>
-							<div class=\"networks__links dropdown-menu\" aria-labelledby=\"dropdownNetwork\">
-								<div class=\"name\">Select a network</div>
-								<div class=\"networks-link\">
-									<a href=\"#\" class=\"networks__link\">
-										<img src=\"/images/ethereum.svg\" alt=\"\" />
-										<span>Ethereum</span>
-									</a>
-									<a href=\"#\" class=\"scan\">
-										<span>Etherscan</span>
-										<img src=\"/images/arrow.svg\" alt=\"\" />
-									</a>
-								</div>
-								<div class=\"networks-link\">
-									<a href=\"#\" class=\"networks__link\">
-										<img src=\"/images/bsc.svg\" alt=\"\" />
-										<span>BSC</span>
-									</a>
-									<a href=\"#\" class=\"scan\">
-										<span>BscScan</span>
-										<img src=\"/images/arrow.svg\" alt=\"\" />
-									</a>
-								</div>
-								<div class=\"networks-link active\">
-									<a href=\"#\" class=\"networks__link\">
+						<div class=\"d-flex gap-2\">
+							<div class=\"auth_off\"> 
+								<div class=\"deposit\"> 
+									<button class=\"art-button-3 btn btn-primary btn-sm\" onclick=\"btn_buy_refill2();\"> Deposit 
+										<div class=\"depositBonus\"></div></button> 
+								</div> 
+							</div>
+							<div class=\"networks\">
+								<a href=\"#\" class=\"networks__active top-header__poligon\" id=\"dropdownNetwork\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+									<span class=\"networks__btn d-flex align-items-center\">
 										<img src=\"/images/poligon.svg\" alt=\"\" />
 										<span>Polygon</span>
-									</a>
-									<a href=\"#\" class=\"scan\">
-										<span>Polygonscan</span>
-										<img src=\"/images/arrow.svg\" alt=\"\" />
-									</a>
+									</span>
+									<svg width=\"11\" height=\"7\" viewBox=\"0 0 11 7\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+										<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0.982895 0.640364C1.30774 0.315516 1.83443 0.315517 2.15928 0.640366L5.69226 4.17336L9.22526 0.640365C9.55011 0.315516 10.0768 0.315516 10.4016 0.640365C10.7265 0.965213 10.7265 1.4919 10.4016 1.81675L6.28045 5.93793C6.12445 6.09393 5.91287 6.18157 5.69226 6.18157C5.47164 6.18157 5.26007 6.09393 5.10407 5.93793L0.982893 1.81674C0.658045 1.4919 0.658046 0.965212 0.982895 0.640364Z\" fill=\"black\"/>
+										</svg>						
+								</a>
+								<div class=\"networks__links dropdown-menu\" aria-labelledby=\"dropdownNetwork\">
+									<div class=\"name\">Select a network</div>
+									<div class=\"networks-link\">
+										<a href=\"#\" class=\"networks__link\">
+											<img src=\"/images/ethereum.svg\" alt=\"\" />
+											<span>Ethereum</span>
+										</a>
+										<a href=\"#\" class=\"scan\">
+											<span>Etherscan</span>
+											<img src=\"/images/arrow.svg\" alt=\"\" />
+										</a>
+									</div>
+									<div class=\"networks-link\">
+										<a href=\"#\" class=\"networks__link\">
+											<img src=\"/images/bsc.svg\" alt=\"\" />
+											<span>BSC</span>
+										</a>
+										<a href=\"#\" class=\"scan\">
+											<span>BscScan</span>
+											<img src=\"/images/arrow.svg\" alt=\"\" />
+										</a>
+									</div>
+									<div class=\"networks-link active\">
+										<a href=\"#\" class=\"networks__link\">
+											<img src=\"/images/poligon.svg\" alt=\"\" />
+											<span>Polygon</span>
+										</a>
+										<a href=\"#\" class=\"scan\">
+											<span>Polygonscan</span>
+											<img src=\"/images/arrow.svg\" alt=\"\" />
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -89,9 +94,10 @@ print "
 print "
 						
 						<div class=\"top-header__wallet\">
+							
 							<div class=\"auth_off\">
-							<div class=\"top-header__wallet-bl\">
-								<div class=\"top-header__wallet-m\"><span class=\"access_balance\">2543</span>$</div>
+								<div class=\"top-header__wallet-bl\">
+									<div class=\"top-header__wallet-m\"><span class=\"access_balance\">2543</span>$</div>
 								<a href=\"#\" data-fancybox class=\"top-header__wallet-id\" data-bs-toggle=\"modal\" data-bs-target=\"#accountModal\">
 									<span class=\"wallet-id\">0xb512...8C0B</span>
 									<span class=\"status\"></span>
